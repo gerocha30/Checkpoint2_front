@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="css/burguer.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https: //fonts.googleapis.com/css2? family= Roboto & display=swap" rel="stylesheet">
     <title>BMW-Home</title>
@@ -14,26 +15,33 @@
 
     <header>
         <img class="logoBmw" src="./img/Icon_Logo.svg">
-        <nav>
-            <ul>
-               <a><li>Home</li></a> 
-                <a><li>Carros</li></a>
-                <a><li>Sobre Nós</li></a>
-                <a><li>Login</li></a>
+        <nav role="navigation">
+            <div id="menuToggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            <ul id="menu">
+                <a href="#home"class="nav-btn"><li >Home</li></a>
+                <a href="#carros"class="nav-btn"><li >Carros</li></a>
+                <a href="#footer"class="nav-btn"><li >Sobre nós</li></a>
+                <a href="#modal" class="nav-btn"><li >Login</li></a>
             </ul>
+            </div>
         </nav>
+
         <nav class="nav-desktop">
             <ul>
-                <a><li>Home</li></a> 
-                <a><li>Carros</li></a>
-                <a><li>Sobre Nós</li></a>
-                <a><li>Login</li></a>
+                <a href="#home"><li>Home</li></a> 
+                <a href="#carros"><li>Carros</li></a>
+                <a href="#footer"><li>Sobre Nós</li></a>
+                <a href="#home"><li>Login</li></a>
             </ul>
         </nav>
     </header>
     
 
-    <section class="banner">
+    <section id="home" class="banner">
         <div class="painelBanner">
             <div class="conteudoBanner">
                 <h1> BMW</h1>
@@ -94,7 +102,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer id="footer">
         <div id="aluno1">
             <h1> Geovana Rocha</h1>
             <p>Responsável pela tela Index e pela criação da segunda tela, Menú hamburguer, e responsividade de ambas e revisão de codigo</p>
