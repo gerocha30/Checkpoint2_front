@@ -36,7 +36,7 @@
                 <a href="#home"><li>Home</li></a> 
                 <a href="#carros"><li>Carros</li></a>
                 <a href="#footer"><li>Sobre Nós</li></a>
-                <a href="#home"><li>Login</li></a>
+                <a href="#modal"><li>Login</li></a>
             </ul>
         </nav>
     </header>
@@ -49,8 +49,23 @@
                 <p> Confira o Showroom de carros da BMW</p>
                 <a href="#carros"> <button class="btnBanner"> Explorar</button></a>
             </div>
-        </div>
-    </section>
+        
+        </section>
+
+<!--Modal-->
+<div id="modal" class="modal">
+    <a href="#"  class="fecharModal">[X]</a>
+        <img src="./img/Icon_Logo.svg" class="logo-modal" alt="Logo Joystick">
+        <img src="./img/blackPattern.jpeg" class="background" alt="homem_jogando">
+        <form class="login">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email"><br>
+            <label for="password">Senha</label>
+            <input type="password" id="password" name="password">
+            <input class="btn_Enviar"  type="submit" value="Login">
+        </form> 
+</div>
+
 
     <h1 id="carros"> Carros</h1>
 
